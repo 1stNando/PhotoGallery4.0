@@ -6,7 +6,7 @@ import { PhotoList } from './PhotoList'
 export function App() {
   return (
     <div className="main">
-      <header>Hello, World HEADER </header>
+      <header>LANDING PAGE HEADER</header>
       <main>
         <Routes>
           <React.Fragment>
