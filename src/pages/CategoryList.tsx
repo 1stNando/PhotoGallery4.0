@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 import data from '../components/data.json'
+import { PhotoListPandas } from './PhotoListPandas'
 
 // a.k.a. the landing page
 export function CategoryList() {
@@ -15,19 +16,16 @@ export function CategoryList() {
                 <Link to="/">
                   <span>Home</span>
                 </Link>
-                <Link to="PhotoList">
-                  <span>PhotoList</span>
-                </Link>
               </li>
             </ul>
           </nav>
           <section className="Landing">
             <div className="container">
               <h2 className="Pic-1">
-                <Link to={`pandas`}>Panda #1.</Link>
+                <Link to={`${PhotoListPandas}`}>Pandas</Link>
               </h2>
               <p>{data.pandas.description}</p>
-              <Link to={`pandas`}>
+              <Link to={`${PhotoListPandas}`}>
                 <img
                   className="pic-1"
                   src={data.pandas.photos[0].imageURL}
@@ -38,14 +36,14 @@ export function CategoryList() {
 
             <div className="container">
               <h2 className="Pic-2">
-                <Link to={`/${Object.keys(data)[1]}`}>Panda #2</Link>
+                <Link to={`/${Object.keys(data)[1]}`}>Miniatures</Link>
               </h2>
-              <p>{data.pandas.description}</p>
+              <p>{data.miniatures.description}</p>
               <Link to={`/${Object.keys(data)[1]}`}>
                 <img
                   className="pic-2"
-                  src={data.pandas.photos[1].imageURL}
-                  alt={data.pandas.photos[1].title}
+                  src={data.miniatures.photos[1].imageURL}
+                  alt={data.miniatures.photos[1].title}
                 />
               </Link>
             </div>
