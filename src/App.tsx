@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router'
 import { CategoryList } from './CategoryList'
-import { PhotoList } from './PhotoList'
+//import { PhotoListPandas } from './PhotoListPandas'
 
 export function App() {
   return (
@@ -11,7 +11,7 @@ export function App() {
         <Routes>
           <React.Fragment>
             <Route path="/" element={<CategoryList />}></Route>
-            <Route path="PhotoList" element={<PhotoList />}></Route>
+            {/* <Route path="PhotoList" element={<PhotoList />}></Route> */}
           </React.Fragment>
         </Routes>
       </main>

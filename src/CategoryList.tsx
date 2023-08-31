@@ -26,7 +26,7 @@ export function CategoryList() {
                 <Link to={`pandas`}>Panda #1.</Link>
               </h2>
               <p>{data.pandas.description}</p>
-              <Link to={`XXX`}>
+              <Link to={`pandas`}>
                 <img
                   className="pic-1"
                   src={data.pandas.photos[0].imageURL}
@@ -37,7 +37,7 @@ export function CategoryList() {
 
             <div className="container">
               <h2 className="Pic-2">
-                <Link to={`/${Object.keys(data)[1]}`}>YYY</Link>
+                <Link to={`/${Object.keys(data)[1]}`}>Panda #2</Link>
               </h2>
               <p>{data.pandas.description}</p>
               <Link to={`/${Object.keys(data)[1]}`}>
