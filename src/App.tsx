@@ -22,12 +22,11 @@ export function App() {
       </header>
 
       <Routes>
-        <Route path="/" element={<CategoryList />}>
-          <Route path="pandas" element={<PhotoListPandas />} />
-          <Route path="miniatures" element={<PhotoListMiniatures />} />
-          <Route path="/:categories/:photoIndex" element={<Details />} />
-          <Route path="*" element={'noMatch'} />
-        </Route>
+        <Route path="/" element={<CategoryList />} />
+        <Route path="pandas" element={<PhotoListPandas />} />
+        <Route path="miniatures" element={<PhotoListMiniatures />} />
+        <Route path="/:categories/:photoIndex" element={<Details />} />
+        <Route path="*" element={'noMatch'} />
       </Routes>
 
       <footer>

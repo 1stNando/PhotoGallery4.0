@@ -20,15 +20,11 @@ export function PhotoListPandas() {
 
       <h3>{data.pandas.title}</h3>
       <div className="pic-multiple">
-        {data.pandas.photos.map((photo, index) => {
-          return (
-            <>
-              <Link to={`./${index}`} key={index}>
-                <img src={photo.imageURL} alt={photo.title} key={index} />
-              </Link>
-            </>
-          )
-        })}
+        {data.pandas.photos.map((photo, index) => (
+          <Link to={`./${index}`} key={index}>
+            <img src={photo.imageURL} alt={photo.title} />
+          </Link>
+        ))}
       </div>
     </div>
   )
