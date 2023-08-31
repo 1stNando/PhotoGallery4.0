@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import data from './components/data.json'
+import data from '../components/data.json'
 
-// a.k.a. Details page
 export function PhotoListPandas() {
   return (
     <div>
@@ -14,7 +13,7 @@ export function PhotoListPandas() {
             </Link>
           </li>
           <li>
-            <Link to={`/PhotoListMiniatures`}>Miniatures</Link>
+            <Link to={`/miniatures`}>Miniatures</Link>
           </li>
         </ul>
       </nav>

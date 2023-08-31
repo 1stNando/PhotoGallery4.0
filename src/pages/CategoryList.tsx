@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
-import data from './components/data.json'
+import data from '../components/data.json'
 
+// a.k.a. the landing page
 export function CategoryList() {
   console.log(Object.keys(data)[0])
   return (

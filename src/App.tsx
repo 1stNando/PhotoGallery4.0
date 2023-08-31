@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router'
-import { CategoryList } from './CategoryList'
+import { CategoryList } from './pages/CategoryList'
 //import { PhotoListPandas } from './PhotoListPandas'
 
 export function App() {
